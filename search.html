@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Search</title>
+    <!-- Bootstrap CSS -->
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">PokeAPI</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="search.html">Search</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="mt-5">Search for a Pokémon</h1>
+      <form id="searchForm" class="form-inline my-4">
+        <input
+          type="text"
+          id="pokemonInput"
+          class="form-control mr-sm-2"
+          placeholder="Enter Pokémon name or ID"
+        />
+        <button type="submit" class="btn btn-primary">Search</button>
+      </form>
+      <div id="pokemonData"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
